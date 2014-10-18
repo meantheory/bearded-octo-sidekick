@@ -25,9 +25,8 @@
       - dotfiles
 
 
-    # tasks:
+    tasks:
 
-    # #:>>> SET HOSTNAME
-    #   - name: set host name
-    #     hostname: name=bearded1
+      - name: update and upgrade
+        apt: update_cache=yes upgrade=yes
 
