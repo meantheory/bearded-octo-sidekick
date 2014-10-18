@@ -1,0 +1,33 @@
+---
+
+  - hosts: all
+    sudo: True
+    vars:
+      pg_version: 9.4
+      db_create: False
+      system_user: vagrant
+      zsh_theme: ys
+      is_dev_environment: True
+      zsh_go_to_start: True
+      python3: True
+      python_mkvirtualenv: True
+      optio_sync: False
+      optio_clone: True
+      optio_dest: /home/vagrant/
+      optio_repo: /home/vagrant/optio
+    roles:
+      #roles not in ansible galaxy are derived from > https://github.com/meantheory/bearded-octo-archer
+      - python-dev
+      # - optio
+      - postgres
+      - zsh
+      - tmate
+      - dotfiles
+
+
+    # tasks:
+
+    # #:>>> SET HOSTNAME
+    #   - name: set host name
+    #     hostname: name=bearded1
+
