@@ -11,14 +11,9 @@
       zsh_go_to_start: True
       python3: True
       python_mkvirtualenv: True
-      optio_sync: False
-      optio_clone: True
-      optio_dest: /home/vagrant/
-      optio_repo: /home/vagrant/optio
     roles:
       #roles not in ansible galaxy are derived from > https://github.com/meantheory/bearded-octo-archer
       - python-dev
-      # - optio
       - postgres
       - zsh
       - tmate
