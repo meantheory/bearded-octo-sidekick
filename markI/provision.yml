@@ -25,3 +25,13 @@
       - name: update and upgrade
         apt: update_cache=yes upgrade=yes
 
+      #idea: put a slew of pypi pacages locally?
+
+      # - name: make pypi cache directory
+      #   file: path='/home/{{ system_user }}/pypi' state=directory
+      #   sudo_user: '{{ system_user }}'
+
+      # - name: initialize local pypi cache
+      #   command: '{{ python_venv_pip }} install -d /home/{{ system_user }}/pypi -r /vagrant/requirements.txt'
+      #   sudo_user: '{{ system_user }}'
+

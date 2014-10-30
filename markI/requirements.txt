@@ -1,0 +1,9 @@
+Cython>=0.21.1
+PyJWT>=0.3.0
+SQLAlchemy>=0.9.8
+falcon>=0.1.10
+psycopg2>=2.5.4
+py>=1.4.25
+pytest>=2.6.3
+python-mimeparse>=0.1.4
+six>=1.8.0
